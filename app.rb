@@ -7,9 +7,9 @@ require_relative 'lib/game'
 player1 = Player.new("Josiane")
 player2 = Player.new("José")
 while player1.life_points > 0 && player2.life_points > 0
-  puts "Voici l'état de chaque joueurs"
-  puts "#{player1.name} a #{player1.life_points} points de vie"
-  puts "#{player2.name} a #{player2.life_points} points de vie"
+  puts "Voici l'état de chaque joueurs :"
+  puts player1.show_state
+  puts player2.show_state
   puts " "
   puts "Passons à la phase d'attaque :"
   player1.attacks(player2)
